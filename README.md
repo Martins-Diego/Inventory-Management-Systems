@@ -152,7 +152,7 @@ UserForm2.Controls("TextBox4").Value = ""
 
 ## Solution 2 - Web Based Solution
 
-![web_solution_ss](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/web_solution_ss)
+![web_solution_ss.png](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/web_solution_ss.png)
 
 ### State Transfer Diagram
 
