@@ -183,7 +183,7 @@ def db_connection():
 
 ### Local Web Server Deployment
 
-!local_web_server_deployment.png](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/local_web_server_deployment.png)
+![local_web_server_deployment.png](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/local_web_server_deployment.png)
 
 ### AJAX Request Example
 
