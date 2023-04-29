@@ -1,4 +1,4 @@
-# Inventory Management
+# Inventory Management Systems
 
 ## Business Problem
 
