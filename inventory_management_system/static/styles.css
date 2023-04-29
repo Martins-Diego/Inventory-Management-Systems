@@ -1,0 +1,26 @@
+*{
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+    
+}
+body{
+    background: #343541;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #212121; /* Fondo negro en las celdas */
+  color: #fff; /* Texto en color blanco */
+}
+
+
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}

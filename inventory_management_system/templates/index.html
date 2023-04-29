@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inventory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5 mb-5">Inventory Management System</h2> <!-- margin-top and margin-bottom of 5 units-->
+        <div class="mb-5">
+            <div class="row"> <!-- Bootstrap horizontal row where the CRUD will be-->
+                <div class="form-group col-md-6 mb-3"> 
+                    <label for="product-code">Product Code</label>
+                    <input type="text" id="product-code" name="product-code" class="form-control" placeholder="Enter Product Code">
+                </div>
+                <div class="form-group col-md-6 mb-3"> 
+                    <label for="description">Description</label>
+                    <input type="text" id="description" name="description" class="form-control" placeholder="Enter Description">
+                </div>
+                <div class="form-group col-md-6 mb-3"> 
+                    <label for="price-per-unit">Price Per Unit</label>
+                    <input type="text" id="price-per-unit" name="price-per-unit" class="form-control" placeholder="Enter Price Per Unit">
+                </div>
+                <div class="form-group col-md-6 mb-3"> 
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" name="quantity" class="form-control" placeholder="Enter Quantity">
+                </div>
+                <div class="col-lg-12 mt-2 text-center"> <!-- Bootstrap full width row-->
+                    <button class="btn btn-primary" id="Submit" onclick="AddData()"> 
+                        Add Product
+                    </button>
+                    <button class="btn btn-primary" id="Issue" onclick="IssueData()"> 
+                        Issue Product
+                    </button>
+                    <button class="btn btn-primary" id="Clear" onclick="ClearFields()"> 
+                        Clear Fields 
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5">
+            <div class="col-12">
+                <table class="table table-bordered" id="crudTable">
+                    <thead>
+                        <tr>
+                            <th>Product Code</th>
+                            <th>Description</th>
+                            <th>Entries</th>
+                            <th>Issues</th>
+                            <th>Stock</th>
+                            <th>Price Per Unit</th>
+                            <th>Inventory Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody> <!-- jinja2 to show the values of the getAllProducts()-->
+                        {% for product in products %}
+                        <tr> 
+                            <td>{{ product.product_code }}</td>
+                            <td>{{ product.descrip }}</td>
+                            <td>{{ product.entries }}</td>
+                            <td>{{ product.issues }}</td>
+                            {% set stock = product.entries - product.issues %}
+                            <td>{{ stock }}</td>
+                            <td>{{ product.price_per_unit }}</td>
+                            <td>{{ stock * product.price_per_unit }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
