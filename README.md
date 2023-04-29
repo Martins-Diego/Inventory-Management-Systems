@@ -156,7 +156,7 @@ UserForm2.Controls("TextBox4").Value = ""
 
 ### State Transfer Diagram
 
-![state_transfer_diagram.png](Inventory%20Management%20cf46c00fa7624efba7df67022e040c8f/state_transfer_diagram.png)
+![state_transfer_diagram.png](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/state_transfer_diagram.png)
 
 1. Imagine that a user fills in the form fields on the web page, including the Product Code, Description, Unit Price, and Quantity.
 2. When this user clicks on the "Add Product" button, a JavaScript function is triggered. The function sends an HTTP request to the web server ([app.py](http://app.py/)) using the fetch() method. In this case, the values of the form fields are submitted in a FormData object.
