@@ -1,5 +1,18 @@
 # Inventory Management Systems
 
+## Table of Contents
+- [Business Problem](#Business-Problem)
+- [Solution 1](#Solution-1-VBA-with-User-Form)
+- [Solution 2](#Solution-2-Web-Based-Solution)
+  - [State Transfer Diagram](#State-Transfer-Diagram)
+  - [MySQL Inventory Database](#MySQL-Inventory-Database)
+  - [Local Web Server Deployment](#Local-Web-Server-Deployment)
+  - [AJAX Request Example](#AJAX-Request-Example)
+  - [Database Values Insertion](#Database-Values-Insertion)
+- [Benefits](#Benefits)
+  - [Solution 1](#Solution-1-VBA-with-User-Form)
+  - [Solution 2](#Solution-2-JS/Python/MySQL)
+
 ## Business Problem
 
 Effective inventory management is a critical issue for many businesses in today's fast-paced market. Companies face the challenge of handling growing volumes of data and meeting increasing market demands, making the task of finding the right software or solution for efficient inventory management essential. According to a study by the Wasp Barcode Technologies, around 43% of small businesses either do not track inventory or use manual methods, which can lead to inefficiencies and stock discrepancies. Furthermore, businesses often struggle to identify the best solution tailored to their specific needs, particularly in terms of company size. This report will present two inventory management solutions: a VBA-based system targeting smaller businesses and a web-based platform designed for larger enterprises handling greater data volumes, providing a comprehensive analysis of their respective benefits and applications.
