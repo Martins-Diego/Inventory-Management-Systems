@@ -273,3 +273,12 @@ def add_product():
 1. **Scalability**: The web-based system is designed to accommodate larger data volumes and scale effortlessly with business growth.
 2. **Accessibility:** The system can be accessed from any device with an internet connection, enabling remote access and real-time updates.
 3. **Integration**: This solution can be readily integrated with other systems, such as accounting or ERP software, for a more streamlined and efficient business process.
+
+## Project techs
+[![HTML](https://img.shields.io/badge/HTML-orange)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-yellow)](https://www.javascript.com/)
+[![Python](https://img.shields.io/badge/Python-blue)](https://www.python.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-blue)](https://www.mysql.com/)
+[![Excel](https://img.shields.io/badge/Excel-green)](https://www.microsoft.com/en-us/microsoft-365/excel)
+[![VBA](https://img.shields.io/badge/VBA-blue)](https://docs.microsoft.com/en-us/office/vba/api/overview/)
