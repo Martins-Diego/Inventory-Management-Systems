@@ -10,8 +10,6 @@
   - [AJAX Request Example](#AJAX-Request-Example)
   - [Database Values Insertion](#Database-Values-Insertion)
 - [Benefits](#Benefits)
-  - [Solution 1](#Solution-1-VBA-with-User-Form)
-  - [Solution 2](#Solution-2-JS/Python/MySQL)
 
 ## Business Problem
 
