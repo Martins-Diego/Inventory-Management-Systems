@@ -6,12 +6,12 @@ Effective inventory management is a critical issue for many businesses in today'
 
 ## Solution 1 - VBA with User Form
 
-![Inventory Panel.png](Inventory%20Management%20cf46c00fa7624efba7df67022e040c8f/Inventory_Panel.png)
+![vba_inventory_panel.png](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/vba_inventory_panel.png)
 
 **Sub1 definition of variables** 
 
 ```vbnet
-	Dim lastRow As Long
+  Dim lastRow As Long
   Dim i As Long
   Dim product_code As String
   Dim description As String
@@ -32,18 +32,18 @@ quantity = UserForm2.Controls("TextBox4").Value
 
 ```vbnet
 lastRow = Hoja1.Cells(Rows.Count, 2).End(xlUp).Row + 1
-	For i = 3 To lastRow
-		'if code already exists
+For i = 3 To lastRow
+'if code already exists
      If Hoja1.Cells(i, 2).Value = product_code Then
-	     Hoja1.Cells(i, 2).Value = product_code
+       Hoja1.Cells(i, 2).Value = product_code
        Hoja1.Cells(i, 3).Value = description
        Hoja1.Cells(i, 4).Value = Hoja1.Cells(i, 4).Value + quantity
        Hoja1.Cells(i, 6).Value = Hoja1.Cells(i, 4).Value - Hoja1.Cells(i, 5).Value
        Hoja1.Cells(i, 7).Value = "$" & Format(price_per_unit, "#,##0.00")
        Hoja1.Cells(i, 8).Value = "$" & Format((Hoja1.Cells(i, 6).Value * Hoja1.Cells(i, 7).Value), "#,##0.00")
-			Exit For
-		'if code doesnt exist
-			ElseIf Hoja1.Cells(i, 2).Value = "" Then
+       Exit For
+'if code doesnt exist
+     ElseIf Hoja1.Cells(i, 2).Value = "" Then
        Hoja1.Cells(i, 2).Value = product_code
        Hoja1.Cells(i, 3).Value = description
        Hoja1.Cells(i, 4).Value = quantity
@@ -51,7 +51,7 @@ lastRow = Hoja1.Cells(Rows.Count, 2).End(xlUp).Row + 1
        Hoja1.Cells(i, 6).Value = Hoja1.Cells(i, 4).Value - Hoja1.Cells(i, 5).Value
        Hoja1.Cells(i, 7).Value = "$" & Format(price_per_unit, "#,##0.00")
        Hoja1.Cells(i, 8).Value = "$" & Format((Hoja1.Cells(i, 6).Value * Hoja1.Cells(i, 7).Value), "#,##0.00")
-			Exit For
+       Exit For
     End If
 Next
 ```
@@ -152,7 +152,7 @@ UserForm2.Controls("TextBox4").Value = ""
 
 ## Solution 2 - Web Based Solution
 
-![Screenshot 2023-04-28 152849.png](Inventory%20Management%20cf46c00fa7624efba7df67022e040c8f/Screenshot_2023-04-28_152849.png)
+![web_solution_ss](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/web_solution_ss)
 
 ### State Transfer Diagram
 
@@ -168,7 +168,7 @@ UserForm2.Controls("TextBox4").Value = ""
 
 ### MySQL Inventory Database
 
-![mysql_inventory_db.png](Inventory%20Management%20cf46c00fa7624efba7df67022e040c8f/mysql_inventory_db.png)
+![mysql_inventory_db.png](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/mysql_inventory_db.png)
 
 ```python
 # Establish connection with the MySQL database
@@ -183,7 +183,7 @@ def db_connection():
 
 ### Local Web Server Deployment
 
-![Screenshot 2023-04-28 191335.png](Inventory%20Management%20cf46c00fa7624efba7df67022e040c8f/Screenshot_2023-04-28_191335.png)
+!local_web_server_deployment.png](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/local_web_server_deployment.png)
 
 ### AJAX Request Example
 
