@@ -251,7 +251,8 @@ def add_product():
     return jsonify({"status": status})
 ```
 
-### System Testing
+## System Testing
+![system1_testing.mp4](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/system1_testing.mp4)
 
 ## Benefits
 
