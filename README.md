@@ -148,8 +148,6 @@ UserForm2.Controls("TextBox4").Value = ""
     End If
 ```
 
-### System Testing
-
 ## Solution 2 - Web Based Solution
 
 ![web_solution_ss.png](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/web_solution_ss.png)
@@ -250,9 +248,6 @@ def add_product():
     # Returns a success or error response depending on the case
     return jsonify({"status": status})
 ```
-
-## System Testing
-![system1_testing.mp4](https://raw.githubusercontent.com/Martins-Diego/Inventory-Management-Systems/main/system1_testing.mp4)
 
 ## Benefits
 
